@@ -1,0 +1,66 @@
+.about__content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  z-index: 10;
+}
+
+.about__content > h1 {
+  font-family: "PT Serif";
+  color: #30af61;
+  font-size: 50px;
+}
+
+.about__content > h2 {
+  font-family: "PT Serif";
+  color: #726c6c;
+
+  font-weight: 700;
+}
+
+.about__content > p {
+  font-family: "Cardo";
+  color: #111;
+
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media (max-width: 860px) {
+  .about__content {
+    width: 80%;
+    gap: 18px;
+  }
+
+  .about__content > h1 {
+    font-size: 34px;
+  }
+
+  .about__content > h2 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  .about__content > p {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 550px) {
+  .about__content > h1 {
+    font-size: 30px;
+  }
+
+  .about__content > h2 {
+    font-size: 20px;
+  }
+
+  .about__content > p {
+    font-size: 16px;
+  }
+}

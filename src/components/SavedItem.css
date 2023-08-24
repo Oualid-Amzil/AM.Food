@@ -1,0 +1,145 @@
+.savedItem {
+  width: 400px;
+  position: relative;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.delete__icon {
+  position: absolute;
+  top: -25px;
+  right: -45px;
+  padding: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.delete__icon > button {
+  background-color: rgb(228, 141, 141);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 200ms ease;
+}
+
+.delete__icon > button:hover {
+  background-color: rgb(241, 15, 15);
+}
+
+.delete__icon > span {
+  font-family: "PT Serif";
+  font-size: 13px;
+  color: #d01818;
+  opacity: 0;
+  transition: all 100ms ease;
+}
+
+.delete__icon:hover > span {
+  opacity: 1;
+}
+
+.savedItem > a > img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 30px;
+  transition: all 200ms ease;
+}
+
+.savedItem > a > img:hover {
+  opacity: 0.8;
+}
+
+.saved__details {
+  position: absolute;
+  bottom: -20px;
+  left: 5%;
+  width: 90%;
+  height: 50%;
+  /* background-color: rgb(48, 175, 97, 0.8); */
+  background: linear-gradient(
+    180deg,
+    rgba(240, 248, 255, 0.9) 15%,
+    rgba(48, 175, 97, 0.8) 58%
+  );
+  padding: 15px;
+  z-index: 10;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.saved__details > h2 {
+  font-family: "PT Serif";
+  color: #214a77;
+  text-align: left;
+}
+
+.saved__sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.saved__sub > h3 {
+  font-family: "Cardo";
+
+  color: rgb(48, 74, 105);
+}
+
+.saved__sub > h3 > span {
+  font-family: "Cardo";
+  font-size: 16px;
+  color: #0d0c0c;
+  margin-left: 8px;
+}
+
+@media (max-width: 1350px) {
+  .savedItem {
+    width: 300px;
+    border-radius: 20px;
+  }
+
+  .saved__details > h2 {
+    font-size: 18px;
+  }
+
+  .saved__sub > h3 {
+    font-size: 14px;
+  }
+
+  .saved__sub > h3 > span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .savedItem {
+    width: 280px;
+    border-radius: 10px;
+  }
+
+  .delete__icon {
+    right: -50px;
+    padding: 7px;
+  }
+
+  .delete__icon > button {
+    width: 28px;
+    height: 28px;
+  }
+
+  .delete__icon > span {
+    font-size: 12px;
+  }
+}

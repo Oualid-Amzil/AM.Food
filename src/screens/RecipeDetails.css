@@ -1,0 +1,409 @@
+.details__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details__wrapper {
+  width: 100%;
+  background-color: aliceblue;
+  padding: 140px 200px 100px;
+  display: flex;
+  gap: 80px;
+  position: relative;
+}
+
+.saved__icon {
+  position: absolute;
+  top: 140px;
+  right: 0px;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: 180px;
+}
+
+.saved__icon > button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.saved__icon > span {
+  font-family: "Cardo";
+  font-size: 13px;
+  opacity: 0;
+  transition: all 100ms ease;
+  color: #726c6c;
+}
+
+.saved__icon:hover > span {
+  opacity: 1;
+}
+
+.details__left {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.recipe__image {
+  width: 100%;
+}
+
+.recipe__image > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  object-fit: contain;
+}
+
+.recipe__ingredient {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recipe__types {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 12px;
+}
+
+.recipe__values {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+
+.value__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.value__wrapper > h3 {
+  font-family: "PT Serif";
+  color: #535151;
+}
+
+.value__wrapper > span {
+  font-family: "PT Serif";
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #969191;
+}
+
+.ingredient__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ingredient__label > h2 {
+  font-size: 30px;
+  color: #30af61;
+  font-family: "PT Serif";
+}
+
+.ingredient__label > h3 {
+  color: #30af61;
+  font-family: "PT Serif";
+}
+
+.ingredient__list {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 16px;
+  justify-content: space-between;
+}
+
+.list__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  width: 45%;
+}
+
+.ingredient__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #30af61;
+}
+
+.ingredient__img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.ingredient__amount {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ingredient__amount > h3 {
+  font-family: "PT Serif";
+  font-size: 16px;
+  text-align: right;
+}
+
+.ingredient__amount > h4 {
+  font-size: 12px;
+  font-family: "PT Serif";
+  text-align: right;
+  color: #868181;
+}
+
+.details__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  padding-top: 80px;
+}
+
+.details__right > h1 {
+  font-size: 50px;
+  text-align: left;
+}
+
+.recipe__label {
+  font-family: "PT Serif";
+  padding: 6px 10px;
+  border-radius: 20px;
+  background-color: #30af61;
+  color: white;
+}
+
+.recipe__nutrition {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.recipe__nutrition > h3 {
+  font-family: "PT Serif";
+  font-size: 22px;
+  color: #30af61;
+}
+
+.nutritions {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  gap: 16px;
+}
+
+.nutrition__type {
+  width: 70px;
+  height: 110px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: #e2e6e4;
+  padding: 0 3px 3px;
+}
+
+.nutrition__type > span {
+  font-family: "PT Serif";
+  background-color: #fff;
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 3px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nutrition__type > h5 {
+  font-size: 11px;
+  color: rgb(86, 84, 84);
+  word-break: break-all;
+}
+
+.recipe__instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.recipe__instructions > h3 {
+  font-family: "PT Serif";
+  font-size: 22px;
+  color: #30af61;
+}
+
+.instruction__step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.instruction__step > p {
+  font-family: "Cardo";
+  text-align: left;
+}
+
+@media (max-width: 1280px) {
+  .details__wrapper {
+    padding: 140px 100px 100px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .details__wrapper {
+    gap: 40px;
+  }
+
+  .details__right {
+    gap: 30px;
+  }
+
+  .details__right > h1 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+
+  .recipe__label {
+    padding: 4px 8px;
+    border-radius: 12px;
+  }
+
+  .recipe__values {
+    gap: 16px;
+  }
+
+  .recipe__nutrition > h3 {
+    font-size: 21px;
+  }
+
+  .recipe__instructions > h3 {
+    font-size: 21px;
+  }
+
+  .instruction__step > h2 {
+    font-size: 18px;
+  }
+
+  .ingredient__label > h2 {
+    font-size: 23px;
+  }
+
+  .ingredient__label > h3 {
+    font-size: 18px;
+  }
+
+  .ingredient__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .ingredient__amount > h3 {
+    font-size: 14px;
+  }
+
+  .ingredient__amount > h4 {
+    font-size: 12px;
+  }
+
+  .nutritions {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 940px) {
+  .details__wrapper {
+    padding: 140px 60px 100px;
+  }
+}
+
+@media (max-width: 850px) {
+  .details__wrapper {
+    padding: 140px 180px 100px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .details__left {
+    width: 100%;
+  }
+
+  .recipe__image > img {
+    border-radius: 80px;
+  }
+
+  .details__right {
+    padding-top: 20px;
+    align-items: center;
+  }
+
+  .recipe__nutrition {
+    align-items: center;
+  }
+
+  .nutritions {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 780px) {
+  .details__wrapper {
+    padding: 140px 120px 100px;
+  }
+
+  .saved__icon {
+    position: absolute;
+    top: 110px;
+    right: -50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .details__wrapper {
+    padding: 140px 90px 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .details__wrapper {
+    padding: 140px 30px 100px;
+  }
+
+  .saved__icon {
+    position: absolute;
+    top: 100px;
+    right: 60px;
+  }
+
+  .details__right {
+    gap: 20px;
+  }
+
+  .recipe__values {
+    gap: 10px;
+  }
+}

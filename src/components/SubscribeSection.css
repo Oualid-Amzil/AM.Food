@@ -1,0 +1,153 @@
+.subscribe {
+  width: auto;
+  margin-top: 40px;
+  padding: 60px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+.subscribe > h1 {
+  font-size: 50px;
+  color: #fff;
+  max-width: 600px;
+  text-align: center;
+  z-index: 10;
+}
+
+.subscribe__input {
+  width: 60%;
+  padding: 10px 20px 10px 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: aliceblue;
+  border-radius: 25px;
+  z-index: 10;
+}
+
+.subscribe__input > input {
+  flex: 1;
+  font-size: 17px;
+  font-family: "PT Serif";
+  background-color: aliceblue;
+  color: #111;
+}
+
+.subscribe__input > button {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "PT Serif";
+  background-color: #30af61;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+
+.subscribe__gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.2) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+@media (max-width: 1170px) {
+  .subscribe {
+    padding: 60px 100px;
+
+    gap: 30px;
+  }
+
+  .subscribe > h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 980px) {
+  .subscribe__input {
+    width: 80%;
+  }
+
+  .subscribe__input > button {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 11px 21px;
+  }
+}
+
+@media (max-width: 750px) {
+  .subscribe {
+    padding: 40px 50px;
+  }
+
+  .subscribe > h1 {
+    font-size: 33px;
+  }
+
+  .subscribe__input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .subscribe > h1 {
+    line-height: 1.2;
+  }
+
+  .subscribe__input {
+    width: 100%;
+    padding: 8px 20px 8px 30px;
+    gap: 12px;
+    border-radius: 20px;
+  }
+
+  .subscribe__input > input {
+    font-size: 15px;
+  }
+
+  .subscribe__input > button {
+    font-size: 17px;
+
+    padding: 13px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .subscribe {
+    padding: 20px;
+  }
+
+  .subscribe > h1 {
+    font-size: 30px;
+  }
+
+  .subscribe__input {
+    padding: 8px 10px;
+    gap: 8px;
+    border-radius: 15px;
+  }
+
+  .subscribe__input > input {
+    font-size: 15px;
+  }
+
+  .subscribe__input > button {
+    font-size: 15px;
+
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+}

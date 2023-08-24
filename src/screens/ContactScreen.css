@@ -1,0 +1,170 @@
+.success {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(42, 246, 120, 0.6);
+  color: #fff;
+  font-family: "PT Serif";
+  font-size: 15px;
+  text-align: center;
+  transition: all 200ms ease;
+}
+
+.error {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(230, 121, 121, 0.2);
+  color: red;
+  font-family: "PT Serif";
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+
+  transition: all 200ms ease;
+}
+
+.contact__form {
+  width: 40%;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0, 0.85);
+  box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+}
+
+.contact__form > h1 {
+  z-index: 10;
+  font-family: "PT Serif";
+  font-size: 40px;
+  color: #30af61;
+}
+
+.contact__input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.contact__input > h2 {
+  font-family: "PT Serif";
+  font-weight: 600;
+  font-size: 18px;
+  color: aliceblue;
+}
+
+.contact__input > input {
+  padding: 12px 14px;
+  font-family: "PT Serif";
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.contact__input > textarea {
+  padding: 12px 14px;
+  font-family: "PT Serif";
+
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.contact__input > span {
+  font-family: "PT Serif";
+  font-size: 16px;
+  color: rgb(234, 106, 106);
+}
+
+.contact__form > button {
+  width: 100%;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "PT Serif";
+  font-size: 17px;
+  border-radius: 5px;
+
+  background-color: rgb(48, 175, 97);
+  color: aliceblue;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  transition: all 100ms ease;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.contact__form > button:hover {
+  background-color: #fff;
+  color: rgb(48, 175, 97, 0.8);
+}
+
+@media (max-width: 1100px) {
+  .contact__form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact__form {
+    padding: 40px 20px;
+  }
+
+  .contact__form > h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact__form {
+    gap: 20px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact__form {
+    padding: 16px 20px;
+    width: 95%;
+  }
+
+  .contact__form > h1 {
+    font-size: 25px;
+  }
+
+  .contact__input > h2 {
+    font-size: 16px;
+  }
+
+  .contact__input > input {
+    padding: 10px 18px;
+  }
+
+  .contact__input > textarea {
+    padding: 10px 18px;
+  }
+
+  .contact__form > button {
+    padding: 8px 25px;
+
+    font-size: 16px;
+  }
+}

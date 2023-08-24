@@ -1,0 +1,299 @@
+.banner {
+  width: 100%;
+  padding: 130px 80px 30px;
+  display: flex;
+}
+
+.banner__left {
+  width: 50%;
+  padding: 30px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.banner__left > h1 {
+  font-size: 45px;
+  font-weight: 800;
+  text-align: left;
+  line-height: 1.1;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text > p {
+  font-size: 18px;
+  font-family: "Cardo";
+  color: #726c6c;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.banner__buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.banner__button {
+  padding: 15px 30px;
+  border: 1px solid #30af61;
+  color: #30af61;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Cardo";
+  cursor: pointer;
+}
+
+.banner__button:hover {
+  background-color: #30af61;
+  color: #fff;
+}
+
+.banner__right {
+  width: 50%;
+  position: relative;
+}
+
+.banner__right > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.first__card,
+.second__card {
+  width: 220px;
+
+  z-index: 10;
+  background-color: aliceblue;
+  padding: 20px;
+  box-shadow: 8px 5px 21px -4px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 8px 5px 21px -4px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 8px 5px 21px -4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.first__card {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  transform: translateX(-50%);
+  border-radius: 0 50px 0 50px;
+}
+
+.second__card {
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  border-radius: 50px 0 50px 0;
+}
+
+.card__label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card__label > h3 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card__label > img {
+  height: 44px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.second__card > ul,
+.first__card > ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  /* gap: 2px; */
+}
+
+.second__card > ul > li,
+.first__card > ul > li {
+  color: #726c6c;
+  font-size: 13px;
+  font-family: "PT Serif";
+  margin-right: 2px;
+}
+
+@media (max-width: 1260px) {
+  .banner__left > h1 {
+    font-size: 40px;
+  }
+
+  .banner__left {
+    padding: 15px 50px;
+  }
+
+  .banner__button {
+    padding: 11px 26px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    padding: 130px 20px 40px;
+  }
+
+  .first__card,
+  .second__card {
+    width: 200px;
+    padding: 10px;
+
+    gap: 5px;
+  }
+
+  .first__card {
+    left: 50px;
+    border-radius: 0 30px 0 30px;
+  }
+
+  .second__card {
+    bottom: 2%;
+    right: 10%;
+    border-radius: 30px 0 30px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text > p {
+    font-size: 16px;
+  }
+
+  .second__card > ul,
+  .first__card > ul {
+    display: none;
+  }
+
+  .banner__left > h1 {
+    font-size: 36px;
+  }
+
+  .banner__left {
+    padding: 15px 50px;
+  }
+
+  .banner__button {
+    font-size: 18px;
+    padding: 11px 26px;
+  }
+
+  .card__label > h3 {
+    font-size: 13px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 900px) {
+  .first__card,
+  .second__card {
+    display: none;
+  }
+}
+
+@media (max-width: 875px) {
+  .banner__left {
+    width: 40%;
+    padding: 0;
+  }
+
+  .banner__right {
+    width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .text {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  .banner {
+    padding: 130px 20px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .banner__left {
+    width: 80%;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .text {
+    align-items: center;
+  }
+
+  .banner__left > h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .banner__right {
+    width: 90%;
+  }
+
+  .first__card,
+  .second__card {
+    display: flex;
+  }
+
+  .second__card > ul,
+  .first__card > ul {
+    display: flex;
+  }
+
+  .first__card {
+    left: 100px;
+    border-radius: 0 30px 0 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .first__card {
+    top: 0;
+    border-radius: 0 30px 0 30px;
+  }
+
+  .second__card {
+    bottom: 0;
+    right: 0;
+  }
+
+  .banner__right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner__left > h1 {
+    font-size: 29px;
+  }
+
+  .second__card > ul,
+  .first__card > ul {
+    display: none;
+  }
+
+  .first__card {
+    border-radius: 0 0 30px 0;
+  }
+
+  .second__card {
+    border-radius: 30px 0 0 0;
+  }
+}

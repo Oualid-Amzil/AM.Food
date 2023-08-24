@@ -1,0 +1,307 @@
+.mealSlider {
+  width: 100%;
+  padding: 30px 80px;
+  position: relative;
+}
+
+.mealSlider__container {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mealSlider__container > h2 {
+  font-family: "PT Serif";
+}
+
+.mealSlider .slick-slider {
+  margin-top: 10px;
+}
+
+.mealSlider .slick-slider .slick-list {
+  flex-direction: row;
+  overflow: hidden;
+  /* color: #cec9c9 */
+}
+
+.mealSlider .slick-track {
+  gap: 10px;
+  display: flex;
+}
+
+.mealSlider .slick-slide {
+  height: auto;
+}
+
+.mealSlider .slick-arrow {
+  z-index: 100 !important;
+  cursor: pointer;
+}
+
+.mealSlider .slick-prev {
+  position: absolute;
+  top: 50%;
+
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+.mealSlider .slick-next {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mealSlider .slick-dots {
+  list-style: none;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dot__button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #b1acac;
+  cursor: pointer;
+  transition: all 400ms linear;
+}
+
+.mealSlider .slick-dots .slick-active .dot__button {
+  background-color: #30af61;
+  width: 30px;
+  border-radius: 4px;
+}
+
+.slide__element {
+  width: 100%;
+  display: flex !important;
+}
+
+.left__element {
+  width: 40%;
+}
+
+.left__element > img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 0 100px 0 100px;
+}
+
+.right__element {
+  width: 60%;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.right__element > h1 {
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.right__element > p {
+  font-family: "Cardo";
+  text-align: left;
+}
+
+.meal__type {
+  background-color: rgb(48, 175, 97, 0.2);
+  font-size: 14px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  color: rgb(48, 175, 97);
+}
+
+.right__sub {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.sub__element {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sub__element > h4 {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.meal__ingredients {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.meal__ingredients > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1345px) {
+  .mealSlider {
+    padding: 30px;
+  }
+
+  .slide__element {
+    position: relative;
+  }
+
+  .right__element {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    border-radius: 80px;
+    padding: 30px;
+
+    justify-content: flex-end;
+  }
+
+  .left__element {
+    width: 100%;
+  }
+
+  .left__element > img {
+    border-radius: 80px;
+  }
+
+  .mealSlider .slick-prev {
+    right: -2px;
+  }
+
+  .mealSlider .slick-next {
+    left: -2px;
+  }
+
+  .right__element > h1 {
+    font-size: 34px;
+    color: #fff;
+  }
+
+  .meal__type {
+    background-color: rgb(48, 175, 97, 1);
+    color: #fff;
+  }
+
+  .right__element > p {
+    color: #fff;
+    display: none;
+  }
+
+  .sub__element > h3 {
+    color: #fff !important;
+  }
+
+  .sub__element > h3 > span {
+    color: #fff !important;
+  }
+
+  .sub__element > h4 {
+    color: #fff;
+  }
+}
+
+@media (max-width: 1050px) {
+  .right__element {
+    border-radius: 30px;
+  }
+
+  .right__element > h1 {
+    font-size: 26px;
+  }
+
+  .left__element > img {
+    border-radius: 30px;
+  }
+
+  .sub__element > h3 {
+    font-size: 17px;
+  }
+
+  .sub__element > h3 > span {
+    font-size: 15px;
+  }
+
+  .sub__element > h4 {
+    font-size: 15px;
+  }
+
+  .meal__type {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 8px;
+    letter-spacing: 0.6px;
+  }
+
+  .meal__ingredients > img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .meal__type {
+    display: none;
+  }
+
+  .meal__ingredients {
+    display: none;
+  }
+
+  .right__sub {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  .right__element {
+    padding: 15px;
+  }
+
+  .right__element > h1 {
+    font-size: 23px;
+    line-height: 1;
+  }
+
+  .sub__element > h3 {
+    font-size: 14px;
+  }
+
+  .sub__element > h3 > span {
+    font-size: 13px;
+  }
+
+  .sub__element > h4 {
+    font-size: 13px;
+  }
+}

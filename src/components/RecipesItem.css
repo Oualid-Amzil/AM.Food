@@ -1,0 +1,15 @@
+.recipe__wrapper {
+  width: 220px;
+  cursor: pointer;
+  box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid #726c6c;
+}
+
+.recipe__wrapper > img {
+  width: 100%;
+  object-fit: contain;
+}

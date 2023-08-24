@@ -1,0 +1,84 @@
+.savedScreen {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(240, 248, 255, 1) 8%,
+    rgba(48, 175, 97, 0.8) 32%,
+    rgba(240, 248, 255, 1) 90%
+  );
+  padding: 120px 90px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.savedScreen > h1 {
+  font-family: "PT Serif";
+  color: #2a2929;
+}
+
+.saved__wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  row-gap: 50px;
+  column-gap: 25px;
+}
+
+.saved__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saved__container > h2 {
+  font-family: "Cardo";
+  color: #2a2929;
+}
+
+@media (max-width: 1430px) {
+  .savedScreen {
+    padding: 120px 50px 80px;
+
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .savedScreen > h1 {
+    font-size: 30px;
+  }
+
+  .saved__wrapper {
+    justify-content: space-evenly;
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .savedScreen {
+    padding: 120px 30px 80px;
+
+    gap: 40px;
+  }
+
+  .savedScreen > h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .savedScreen {
+    padding: 120px 20px 80px;
+
+    gap: 35px;
+  }
+
+  .savedScreen > h1 {
+    font-size: 23px;
+  }
+}

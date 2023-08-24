@@ -1,0 +1,106 @@
+.recipesScreen {
+  width: 100%;
+  min-height: 100vh;
+  padding: 180px 100px 80px;
+  background: linear-gradient(
+    180deg,
+    rgba(240, 248, 255, 1) 13%,
+    rgba(48, 175, 97, 0.6) 32%,
+    rgba(240, 248, 255, 1) 90%
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.side__bar {
+  width: 100%;
+  padding: 0 15px 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 30px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.label > h2 {
+  font-family: "PT Serif";
+  font-size: 20px;
+  color: #726c6c;
+}
+
+.select {
+  width: 140px;
+  padding: 2px;
+  border-radius: 6px;
+  background-color: rgb(48, 175, 97, 0.2);
+  border: 1px solid #545353;
+}
+
+.option {
+  font-family: "PT Serif";
+  background-color: rgb(48, 175, 97, 0.5);
+}
+
+.recipes__container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipes__container > h2 {
+  font-family: "PT Serife";
+}
+
+.recipes__wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.recipes__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 1140px) {
+  .recipesScreen {
+    padding: 180px 40px 80px;
+  }
+}
+
+@media (max-width: 630px) {
+  .label {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .recipesScreen {
+    padding: 180px 20px 80px;
+  }
+
+  .label > h2 {
+    font-size: 18px;
+  }
+
+  .select {
+    width: 120px;
+  }
+}
