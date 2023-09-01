@@ -13,7 +13,7 @@ export const sendSavedRecipes = (elements) => {
       await axios({
         method: "put",
         url: `
-        https://am-food-15af9-default-rtdb.firebaseio.com/savedList/
+        https://am-food-56ddd-default-rtdb.firebaseio.com/savedList/
         ${userId}.json?auth=${token}`,
         data: {
           saveRecipes: elements,
@@ -36,7 +36,7 @@ export const getSavedRecipes = () => {
       const response = await axios({
         method: "get",
         url: `
-        https://am-food-15af9-default-rtdb.firebaseio.com/savedList/
+        https://am-food-56ddd-default-rtdb.firebaseio.com/savedList/
         ${userId}.json?auth=${token}
         `,
       });
