@@ -1,7 +1,7 @@
 {
   "name": "am-recipes",
   "version": "0.1.0",
-  "homepage": "https://Oualid-Amzil.github.io/AM.Recipes",
+  "homepage": "https://oualid-amzil.github.io/AM.Recipes",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
