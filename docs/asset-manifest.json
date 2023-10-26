@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/AM.Recipes/static/css/main.9401777b.css",
+    "main.js": "/AM.Recipes/static/js/main.f218f744.js",
+    "static/media/brooke-lark-aGjP08-HbYY-unsplash.jpg": "/AM.Recipes/static/media/brooke-lark-aGjP08-HbYY-unsplash.99140a6d72c89033bd86.jpg",
+    "static/media/brooke-lark-wMzx2nBdeng-unsplash.jpg": "/AM.Recipes/static/media/brooke-lark-wMzx2nBdeng-unsplash.6c72dcf60c8fb78ff5e4.jpg",
+    "static/media/hermes-rivera-OzBLe_Eg1mg-unsplash.jpg": "/AM.Recipes/static/media/hermes-rivera-OzBLe_Eg1mg-unsplash.149ddbe43c3d4143be4e.jpg",
+    "index.html": "/AM.Recipes/index.html",
+    "main.9401777b.css.map": "/AM.Recipes/static/css/main.9401777b.css.map",
+    "main.f218f744.js.map": "/AM.Recipes/static/js/main.f218f744.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9401777b.css",
+    "static/js/main.f218f744.js"
+  ]
+}
