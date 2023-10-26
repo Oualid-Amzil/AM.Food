@@ -2,7 +2,7 @@ import React, { useState, useEffect, memo } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "animate.css";
-import axios from "axios";
+import instance from "./../instance";
 
 import saladBowl from "../images/hermes-rivera-OzBLe_Eg1mg-unsplash.jpg";
 import "./Banner.css";
@@ -15,8 +15,8 @@ const Banner = () => {
 
   useEffect(() => {
     const getRecipes = async () => {
-      const response = await axios.get(
-        `https://api.spoonacular.com/recipes/random?apiKey=${API_KEY}&number=2&type=salad`
+      const response = await instance.get(
+        `/random?apiKey=${API_KEY}&number=2&type=salad`
       );
 
       setRecipes(response.data.recipes);

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import RecipesItem from "../components/RecipesItem";
 import PagesSlider from "../components/UI/PagesSlider";
 import { selectedActions } from "../app/selectedElements";
-import axios from "axios";
+import instance from "../instance";
 import "animate.css";
 
 import { types, cuisines, intolerances, diets } from "../requests";
@@ -37,8 +37,8 @@ const RecipesScreen = () => {
       setIsLoading(true);
       setErrorMessage(null);
       try {
-        const response = await axios.get(
-          `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&type=${type}&cuisine=${cuisine}&intolerances=${intolerance}&diet=${diet}&number=40&offset=${offset}&addRecipeNutrition=true`
+        const response = await instance.get(
+          `/complexSearch?apiKey=${API_KEY}&type=${type}&cuisine=${cuisine}&intolerances=${intolerance}&diet=${diet}&number=40&offset=${offset}&addRecipeNutrition=true`
         );
 
         setRecipes(response.data.results);

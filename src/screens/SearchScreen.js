@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import axios from "axios";
+import instance from "../instance";
 import SearchItem from "../components/SearchItem";
 import PagesSlider from "../components/UI/PagesSlider";
 import { searchActions } from "../app/searchItem";
@@ -26,8 +26,8 @@ const SearchScreen = () => {
       setIsLoading(true);
       setErrorMessage(null);
       try {
-        const response = await axios.get(
-          `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&query=${searchWord}&number=40&offset=${offset}&addRecipeNutrition=true`
+        const response = await instance.get(
+          `/complexSearch?apiKey=${API_KEY}&query=${searchWord}&number=40&offset=${offset}&addRecipeNutrition=true`
         );
 
         setRecipes(response.data.results);

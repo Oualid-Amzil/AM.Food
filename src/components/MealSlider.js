@@ -1,5 +1,5 @@
 import React, { useEffect, useState, memo } from "react";
-import axios from "axios";
+import instance from "../instance";
 import Slider from "react-slick";
 import { RxChevronLeft, RxChevronRight } from "react-icons/rx";
 import { FaHotjar } from "react-icons/fa";
@@ -20,8 +20,8 @@ const MealSlider = () => {
       setErrorMessage(null);
 
       try {
-        const response = await axios.get(
-          `https://api.spoonacular.com/recipes/random?apiKey=${API_KEY}&number=10&type="main course"`
+        const response = await instance.get(
+          `/random?apiKey=${API_KEY}&number=10&type="main course"`
         );
 
         setRecipes(response.data.recipes);

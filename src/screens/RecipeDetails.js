@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { savedRcpsActions } from "../app/saved/savedRcpsSlice";
-import axios from "axios";
+import instance from "../instance";
 import { MdTimer } from "react-icons/md";
 import { FaHotjar } from "react-icons/fa";
 import { BsFillBookmarkFill, BsBookmark } from "react-icons/bs";
@@ -44,8 +44,8 @@ const RecipeDetails = () => {
       setIsLoading(false);
       setErrorMessage(null);
       try {
-        const response = await axios.get(
-          `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${API_KEY}&includeNutrition=true&analyzedInstructions=true`
+        const response = await instance.get(
+          `/${recipeId}/information?apiKey=${API_KEY}&includeNutrition=true&analyzedInstructions=true`
         );
 
         setRecipe(response.data);
