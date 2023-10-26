@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import RecipeDetails from "./screens/RecipeDetails";
 import SearchScreen from "./screens/SearchScreen";
@@ -18,7 +18,7 @@ function App() {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <div className="App">
         <Nav />
         <Routes>
@@ -44,7 +44,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
