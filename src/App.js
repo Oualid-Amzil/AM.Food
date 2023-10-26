@@ -22,7 +22,7 @@ function App() {
       <div className="App">
         <Nav />
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />}></Route>
+          <Route path="/*" element={<Navigate to="/home" />}></Route>
           <Route path="/home" element={<HomeScreen />}></Route>
           {isAuthenticated && (
             <Route path="/details/:id" element={<RecipeDetails />}></Route>
